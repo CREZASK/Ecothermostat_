@@ -1,0 +1,476 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent">
+
+	<ScrollView
+		android:id="@+id/scrollView2"
+		android:layout_marginVertical="60dp"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+				android:layout_marginVertical="@dimen/activity_vertical_margin"
+				android:background="@drawable/background_gradient"
+				android:onClick="onFrameClick">
+
+				<TextView
+					android:id="@+id/location"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentStart="true"
+					android:layout_alignParentTop="true"
+					android:paddingHorizontal="20dp"
+					android:paddingTop="10dp"
+					android:text="@string/my_location"
+					android:textColor="@android:color/white"
+					android:textSize="24sp"
+					android:textStyle="bold" />
+
+				<TextView
+					android:id="@+id/name"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/location"
+					android:maxEms="9"
+					android:layout_alignParentStart="true"
+					android:paddingHorizontal="20dp"
+					android:text="@string/default_loc"
+					android:textColor="@android:color/white"
+					android:textSize="18sp" />
+
+				<TextView
+					android:id="@+id/temperature"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentEnd="true"
+					android:paddingEnd="20dp"
+					android:paddingBottom="30dp"
+					android:textColor="@android:color/white"
+					android:textSize="50sp" />
+
+				<TextView
+					android:id="@+id/weather_condition"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/temperature"
+					android:layout_alignParentStart="true"
+					android:paddingStart="30dp"
+					android:textColor="@android:color/white"
+					android:textSize="18sp" />
+
+				<TextView
+					android:id="@+id/H"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/temperature"
+					android:layout_toStartOf="@id/temp_max"
+					android:paddingBottom="6dp"
+					android:text="H: "
+					android:textColor="@android:color/white"
+					android:textSize="18sp" />
+
+				<TextView
+					android:id="@+id/temp_max"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/temperature"
+					android:paddingEnd="5dp"
+					android:layout_toStartOf="@id/L"
+					android:paddingBottom="6dp"
+					android:text="2°"
+					android:textColor="@android:color/white"
+					android:textSize="18sp" />
+
+				<TextView
+					android:id="@+id/L"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/temperature"
+					android:layout_toStartOf="@id/temp_min"
+					android:paddingBottom="6dp"
+					android:text="L: "
+					android:textColor="@android:color/white"
+					android:textSize="18sp" />
+
+				<TextView
+					android:id="@+id/temp_min"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/temperature"
+					android:layout_alignParentEnd="true"
+					android:paddingRight="30dp"
+					android:paddingBottom="6dp"
+					android:text="-12 C"
+					android:textColor="@android:color/white"
+					android:textSize="18sp" />
+
+			</RelativeLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+				android:layout_marginVertical="@dimen/activity_vertical_margin"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/room"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:background="@color/white"
+					android:fontFamily="Inter"
+					android:gravity="center"
+					android:text="@string/rooms"
+					android:textColor="@color/black"
+					android:textSize="13sp"
+					android:textStyle="bold" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+				android:layout_marginVertical="@dimen/activity_vertical_margin"
+				android:baselineAligned="false"
+				android:orientation="horizontal">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_gravity="center"
+					android:layout_weight="1"
+					android:orientation="vertical">
+
+					<ImageView
+						android:id="@+id/img_bed_1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:contentDescription="@string/img_bed_1"
+						android:src="@drawable/img"
+						android:onClick="onbed_1_Click"/>
+
+					<TextView
+						android:id="@+id/bedroom_1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:layout_marginVertical="@dimen/activity_vertical_margin"
+						android:layout_weight="1"
+						android:fontFamily="sans-serif-condensed-medium"
+						android:text="@string/bedroom_1"
+						android:textSize="18sp"
+						android:textStyle="bold" />
+
+					<androidx.appcompat.widget.SwitchCompat
+						android:id="@+id/bed1_switch"
+						android:layout_width="48dp"
+						android:layout_height="48dp"
+						android:layout_gravity="center"
+						android:textOff="@string/off"
+						android:textOn="@string/on" />
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_gravity="center"
+					android:layout_weight="1"
+					android:orientation="vertical">
+
+					<ImageView
+						android:id="@+id/img_living"
+						android:layout_width="155dp"
+						android:layout_height="120dp"
+						android:layout_gravity="center"
+						android:contentDescription="@string/img_living"
+						android:src="@drawable/img_ek1"
+						android:onClick="onliv_room_Click"/>
+
+					<TextView
+						android:id="@+id/living_room"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:layout_marginVertical="@dimen/activity_vertical_margin"
+						android:fontFamily="sans-serif-condensed-medium"
+						android:text="@string/living_room"
+						android:textSize="18sp"
+						android:textStyle="bold" />
+
+					<androidx.appcompat.widget.SwitchCompat
+						android:id="@+id/liv_switch"
+						android:layout_width="wrap_content"
+						android:layout_height="50dp"
+						android:layout_gravity="center" />
+
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+				android:layout_marginVertical="@dimen/activity_vertical_margin"
+				android:baselineAligned="false"
+				android:orientation="horizontal">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_gravity="center"
+					android:layout_weight="1"
+					android:orientation="vertical">
+
+					<ImageView
+						android:id="@+id/img_office"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:contentDescription="@string/img_office"
+						android:onClick="onoffice_Click"
+						android:src="@drawable/office1" />
+
+					<TextView
+						android:id="@+id/office"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:layout_marginVertical="@dimen/activity_vertical_margin"
+						android:fontFamily="sans-serif-condensed-medium"
+						android:text="@string/office"
+						android:textSize="18sp"
+						android:textStyle="bold" />
+
+					<androidx.appcompat.widget.SwitchCompat
+						android:id="@+id/office_switch"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center" />
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_gravity="center"
+					android:layout_weight="1"
+					android:orientation="vertical">
+
+					<ImageView
+						android:id="@+id/img_bed_2"
+						android:layout_width="155dp"
+						android:layout_height="120dp"
+						android:layout_gravity="center"
+						android:contentDescription="@string/img_bed_2"
+						android:src="@drawable/bedroom2"
+						android:onClick="onbed_2_Click"/>
+
+					<TextView
+						android:id="@+id/bedroom_2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:layout_marginVertical="@dimen/activity_vertical_margin"
+						android:fontFamily="sans-serif-condensed-medium"
+						android:text="@string/bedroom_2"
+						android:textSize="18sp"
+						android:textStyle="bold" />
+
+					<androidx.appcompat.widget.SwitchCompat
+						android:id="@+id/bed2_switch"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						/>
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+				android:layout_marginVertical="@dimen/activity_vertical_margin"
+				android:baselineAligned="false"
+				android:orientation="horizontal">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_gravity="center"
+					android:layout_weight="1"
+					android:orientation="vertical">
+
+					<ImageView
+						android:id="@+id/img_bathroom"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:contentDescription="@string/img_bathroom"
+						android:src="@drawable/bathroom"
+						android:onClick="onbathroom_Click"/>
+
+					<TextView
+						android:id="@+id/bathroom"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:layout_marginVertical="@dimen/activity_vertical_margin"
+						android:fontFamily="sans-serif-condensed-medium"
+						android:text="@string/bathroom"
+						android:textSize="18sp"
+						android:textStyle="bold" />
+
+					<androidx.appcompat.widget.SwitchCompat
+						android:id="@+id/bath_switch"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_gravity="center"
+					android:layout_weight="1"
+					android:orientation="vertical">
+
+					<ImageView
+						android:id="@+id/img_kitchen"
+						android:layout_width="155dp"
+						android:layout_height="120dp"
+						android:layout_gravity="center"
+						android:contentDescription="@string/img_kitchen"
+						android:src="@drawable/kitchen"
+						android:onClick="onkitchen_Click"/>
+
+					<TextView
+						android:id="@+id/kitchen"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:layout_marginVertical="@dimen/activity_vertical_margin"
+						android:fontFamily="sans-serif-condensed-medium"
+						android:text="@string/kitchen"
+						android:textSize="18sp"
+						android:textStyle="bold" />
+
+					<androidx.appcompat.widget.SwitchCompat
+						android:id="@+id/kitchen_switch"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"/>
+				</LinearLayout>
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+	<LinearLayout
+		android:id="@+id/linearLayout2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingVertical="10dp"
+		android:background="@color/white"
+		android:orientation="horizontal"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<ImageView
+			android:id="@+id/ellipse_9"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="2"
+			android:contentDescription="@string/ellipse_9"
+			android:src="@drawable/ellipse_9" />
+
+		<ImageView
+			android:id="@+id/ecothermostat"
+			android:layout_width="wrap_content"
+			android:layout_height="40dp"
+			android:layout_marginTop="10dp"
+			android:layout_weight="0"
+			android:layout_gravity="center_horizontal"
+			android:contentDescription="@string/ecothermostat"
+			android:src="@drawable/logo" />
+
+		<ImageView
+			android:id="@+id/notification"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:layout_marginEnd="15dp"
+			android:layout_weight="1"
+			android:contentDescription="@string/notification"
+			android:src="@drawable/notifications"
+			android:onClick="on_notification_Click"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/linearLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:orientation="horizontal"
+		android:paddingVertical="10dp"
+		app:layout_constraintBottom_toBottomOf="parent">
+
+		<ImageView
+			android:id="@+id/home_nav"
+			android:layout_width="50dp"
+			android:layout_height="40dp"
+			android:layout_weight="1"
+			android:contentDescription="@string/home_nav"
+			android:src="@drawable/home_dark" />
+
+		<ImageView
+			android:id="@+id/status_nav"
+			android:layout_width="50dp"
+			android:layout_height="40dp"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:contentDescription="@string/status_nav"
+			android:onClick="onStatusClick"
+			android:src="@drawable/status_light" />
+
+		<ImageView
+			android:id="@+id/statistics_nav"
+			android:layout_width="50dp"
+			android:layout_height="40dp"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:contentDescription="@string/statistics_nav"
+			android:onClick="onStatisticsClick"
+			android:src="@drawable/history_light" />
+
+		<ImageView
+			android:id="@+id/settings_nav"
+			android:layout_width="50dp"
+			android:layout_height="40dp"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:contentDescription="@string/settings_nav"
+			android:onClick="onSettingsClick"
+			android:src="@drawable/settings_light" />
+
+	</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

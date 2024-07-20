@@ -1,0 +1,123 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fillViewport="true"
+	android:background="#FFFFFF">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#FFFFFF"
+			android:padding="16dp">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:orientation="vertical"
+				tools:ignore="ExtraText">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="16dp"
+					android:background="#F8F8F8"
+					android:gravity="center"
+					android:orientation="horizontal"
+					android:padding="16dp">
+
+					<TextView
+						android:id="@+id/learn_with_us"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:fontFamily="sans-serif"
+						android:text="Learn with us"
+						android:textColor="#000000"
+						android:textSize="28sp"
+						android:textStyle="bold" />
+
+					<ImageView
+						android:id="@+id/globe_icon"
+						android:layout_width="24dp"
+						android:layout_height="24dp"
+						android:layout_gravity="center"
+						android:layout_marginStart="10dp"
+						android:contentDescription="Learn with us globe icon"
+						android:src="@drawable/learn_withus" />
+				</LinearLayout>
+
+				<TextView
+					android:id="@+id/information_text"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="16dp"
+					android:fontFamily="sans-serif"
+					android:lineSpacingExtra="8dp"
+					android:padding="56dp"
+					android:text="@string/learn_page_content"
+					android:textColor="#000000"
+					android:textSize="16sp" />
+			</LinearLayout>
+
+		</RelativeLayout>
+	</ScrollView>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom"
+		android:background="@color/white"
+		android:orientation="horizontal"
+		android:paddingVertical="10dp"
+		app:layout_constraintBottom_toBottomOf="parent">
+
+
+		<ImageView
+			android:id="@+id/home_nav"
+			android:layout_width="50dp"
+			android:layout_height="40dp"
+			android:layout_weight="1"
+			android:layout_gravity="center_vertical"
+			android:contentDescription="@string/home_nav"
+			android:onClick="onHomeClick"
+			android:src="@drawable/home_light" />
+
+		<ImageView
+			android:id="@+id/status_nav"
+			android:layout_width="50dp"
+			android:layout_height="40dp"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:contentDescription="@string/status_nav"
+			android:onClick="onStatusClick"
+			android:src="@drawable/status_light" />
+
+		<ImageView
+			android:id="@+id/statistics_nav"
+			android:layout_width="50dp"
+			android:layout_height="40dp"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:contentDescription="@string/statistics_nav"
+			android:onClick="onStatisticsClick"
+			android:src="@drawable/history_light" />
+
+		<ImageView
+			android:id="@+id/settings_nav"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:contentDescription="@string/settings_nav"
+			android:src="@drawable/settings_dark"
+			android:onClick="onSettingsClick"/>
+
+	</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

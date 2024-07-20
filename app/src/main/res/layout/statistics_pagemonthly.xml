@@ -1,0 +1,675 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:background="#EEEEEE"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent">
+
+	<TextView
+		android:id="@+id/statistics_txt"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingVertical="@dimen/activity_vertical_margin"
+		android:gravity="center"
+		android:text="Statistics"
+		android:textSize="32sp"
+		android:textStyle="bold"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/enrgy_usg_txt"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingHorizontal="@dimen/activity_horizontal_margin"
+		android:text="Energy Usage"
+		android:textSize="24sp"
+		android:textStyle="bold"
+		app:layout_constraintTop_toBottomOf="@+id/statistics_txt"
+		tools:layout_editor_absoluteX="16dp" />
+
+	<HorizontalScrollView
+		android:id="@+id/horizontalScrollView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:layout_constraintTop_toBottomOf="@+id/enrgy_usg_txt">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:id="@+id/linearLayout3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingHorizontal="@dimen/activity_horizontal_margin"
+				android:paddingVertical="@dimen/activity_vertical_margin">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:paddingEnd="18dp"
+					android:orientation="vertical">
+
+					<RelativeLayout
+						android:layout_width="170dp"
+						android:layout_height="70dp"
+						android:layout_gravity="center"
+						android:background="@drawable/statistics_room_bg">
+
+						<TextView
+							android:id="@+id/kitchen_d1"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentStart="true"
+							android:paddingStart="10dp"
+							android:paddingTop="10dp"
+							android:text="Kitchen D1"
+							android:textSize="18sp"
+							android:textStyle="bold" />
+
+						<TextView
+							android:id="@+id/_10_2_kwh_252_45__"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/kitchen_d1"
+							android:layout_alignParentStart="true"
+							android:paddingStart="10dp"
+							android:text="10.2 kWh 252.45€"
+							android:textSize="16sp" />
+					</RelativeLayout>
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:paddingEnd="18dp"
+					android:orientation="vertical">
+
+					<RelativeLayout
+						android:layout_width="170dp"
+						android:layout_height="70dp"
+						android:layout_gravity="center"
+						android:background="@drawable/statistics_room_bg">
+
+						<TextView
+							android:id="@+id/living_room_d4"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentStart="true"
+							android:paddingStart="10dp"
+							android:paddingTop="10dp"
+							android:text="Living Room D4"
+							android:textSize="18sp"
+							android:textStyle="bold" />
+
+						<TextView
+							android:id="@+id/_5_3_kwh_131_18__"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/living_room_d4"
+							android:layout_alignParentStart="true"
+							android:paddingStart="10dp"
+							android:text="5.3 kWh 131.18€"
+							android:textSize="16sp" />
+					</RelativeLayout>
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:orientation="vertical"
+					android:paddingEnd="18dp">
+
+					<RelativeLayout
+						android:layout_width="170dp"
+						android:layout_height="70dp"
+						android:layout_gravity="center"
+						android:background="@drawable/statistics_room_bg">
+
+						<TextView
+							android:id="@+id/bedroom_2_d3"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentStart="true"
+							android:paddingStart="10dp"
+							android:paddingTop="10dp"
+							android:text="Bedroom 2 D3"
+							android:textSize="18sp"
+							android:textStyle="bold" />
+
+						<TextView
+							android:id="@+id/_2_2_kwh_54_45__"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/bedroom_2_d3"
+							android:layout_alignParentStart="true"
+							android:paddingStart="10dp"
+							android:text="2.2 kWh 54.45€"
+							android:textSize="16sp" />
+					</RelativeLayout>
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/linearLayout4"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingHorizontal="@dimen/activity_horizontal_margin"
+				android:paddingVertical="@dimen/activity_vertical_margin">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:paddingEnd="18dp"
+					android:orientation="vertical">
+
+					<RelativeLayout
+						android:layout_width="170dp"
+						android:layout_height="70dp"
+						android:layout_gravity="center"
+						android:background="@drawable/statistics_room_bg">
+
+						<TextView
+							android:id="@+id/bedroom_1_d2"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentStart="true"
+							android:paddingStart="10dp"
+							android:paddingTop="10dp"
+							android:text="Bedroom 1 D2"
+							android:textSize="18sp"
+							android:textStyle="bold" />
+
+						<TextView
+							android:id="@+id/_3_1_kwh_76_73__"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/bedroom_1_d2"
+							android:layout_alignParentStart="true"
+							android:paddingStart="10dp"
+							android:text="3.1 kWh 76.73€"
+							android:textSize="16sp" />
+
+					</RelativeLayout>
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:paddingEnd="18dp"
+					android:orientation="vertical">
+
+					<RelativeLayout
+						android:layout_width="170dp"
+						android:layout_height="70dp"
+						android:layout_gravity="center"
+						android:background="@drawable/statistics_room_bg">
+
+						<TextView
+							android:id="@+id/bathroom_d5"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentStart="true"
+							android:paddingStart="10dp"
+							android:paddingTop="10dp"
+							android:text="Bathroom D5"
+							android:textSize="18sp"
+							android:textStyle="bold" />
+
+						<TextView
+							android:id="@+id/_2_3_kwh_56_93__"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/bathroom_d5"
+							android:layout_alignParentStart="true"
+							android:paddingStart="10dp"
+							android:text="2.3 kWh 56.93€"
+							android:textSize="16sp" />
+
+					</RelativeLayout>
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:orientation="vertical"
+					android:paddingEnd="18dp">
+
+					<RelativeLayout
+						android:layout_width="170dp"
+						android:layout_height="70dp"
+						android:layout_gravity="center"
+						android:background="@drawable/statistics_room_bg">
+
+						<TextView
+							android:id="@+id/office_d6"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentStart="true"
+							android:paddingStart="10dp"
+							android:paddingTop="10dp"
+							android:text="Office D6"
+							android:textSize="18sp"
+							android:textStyle="bold" />
+
+						<TextView
+							android:id="@+id/_1_8_kwh_44_55__"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/office_d6"
+							android:layout_alignParentStart="true"
+							android:paddingStart="10dp"
+							android:text="1.8 kWh 44.55€"
+							android:textSize="16sp" />
+
+					</RelativeLayout>
+				</LinearLayout>
+			</LinearLayout>
+
+		</LinearLayout>
+	</HorizontalScrollView>
+
+	<LinearLayout
+		android:id="@+id/linearLayout7"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:paddingHorizontal="30dp"
+		android:paddingVertical="6dp"
+		app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
+
+		<androidx.appcompat.widget.AppCompatButton
+			android:id="@+id/_1D"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="left"
+			android:text="1D"
+			android:background="#EEEEEE"
+			android:textSize="16sp" />
+
+		<androidx.appcompat.widget.AppCompatButton
+			android:id="@+id/_1W"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center_horizontal"
+			android:text="1W"
+			android:background="#EEEEEE"
+			android:textSize="16sp"/>
+
+		<androidx.appcompat.widget.AppCompatButton
+			android:id="@+id/_1M"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="right"
+			android:text="1M"
+			android:textColor="@color/save_button_blue"
+			android:background="#EEEEEE"
+			android:textSize="16sp"
+			android:textStyle="bold"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/linearLayout5"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingBottom="@dimen/activity_vertical_margin"
+		android:paddingHorizontal="@dimen/activity_horizontal_margin"
+		android:orientation="horizontal"
+		app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+		<TextView
+			android:id="@+id/stat_details"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:text="Details of the day" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/linearLayout6"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingHorizontal="@dimen/activity_horizontal_margin"
+		android:orientation="horizontal"
+		app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+		<TextView
+			android:id="@+id/climate_control"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:maxEms="3"
+			android:layout_gravity="center"
+			android:paddingStart="30dp"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			android:text="Climate Control" />
+
+		<TextView
+			android:id="@+id/duration"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingStart="32dp"
+			android:layout_gravity="center"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			android:text="Duration" />
+
+		<TextView
+			android:id="@+id/presence_members"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:maxEms="3"
+			android:layout_weight="2"
+			android:gravity="center"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			android:text="Presence of household members" />
+	</LinearLayout>
+	<!--
+	/*
+	 *	maxEms is for setting the maximum ems width
+	-->
+
+	<ScrollView
+		android:id="@+id/scroll_view_details"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:paddingVertical="10dp"
+		app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+		<LinearLayout
+			android:id="@+id/main_scroll_column"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:orientation="vertical">
+
+					<TextView
+						android:id="@+id/D1_on"
+						android:layout_width="80dp"
+						android:layout_height="40dp"
+						android:layout_marginBottom="18dp"
+						android:layout_weight="1"
+						android:background="@drawable/statistics_room_bg"
+						android:text="D1_ON"
+						android:textSize="20sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:id="@+id/D2_on"
+						android:layout_width="80dp"
+						android:layout_height="40dp"
+						android:layout_marginBottom="18dp"
+						android:layout_weight="1"
+						android:background="@drawable/statistics_room_bg"
+						android:text="D2_ON"
+						android:textSize="20sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:id="@+id/D3_on"
+						android:layout_width="80dp"
+						android:layout_height="40dp"
+						android:layout_marginBottom="18dp"
+						android:background="@drawable/statistics_room_bg"
+						android:text="D3_ON"
+						android:textSize="20sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:id="@+id/D4_on"
+						android:layout_width="80dp"
+						android:layout_height="40dp"
+						android:layout_marginBottom="18dp"
+						android:background="@drawable/statistics_room_bg"
+						android:text="D4_ON"
+						android:textSize="20sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:id="@+id/D5_on"
+						android:layout_width="80dp"
+						android:layout_height="40dp"
+						android:layout_marginBottom="18dp"
+						android:background="@drawable/statistics_room_bg"
+						android:text="D5_ON"
+						android:textSize="20sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:id="@+id/D6_on"
+						android:layout_width="80dp"
+						android:layout_height="40dp"
+						android:layout_marginBottom="18dp"
+						android:background="@drawable/statistics_room_bg"
+						android:text="D6_ON"
+						android:textSize="20sp"
+						android:textStyle="bold" />
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:orientation="vertical">
+
+					<TextView
+						android:id="@+id/time1"
+						android:layout_width="80dp"
+						android:layout_height="40dp"
+						android:layout_marginBottom="18dp"
+						android:layout_weight="1"
+						android:background="@drawable/statistics_room_bg"
+						android:text="2h 22m"
+						android:textSize="20sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:id="@+id/time2"
+						android:layout_width="80dp"
+						android:layout_height="40dp"
+						android:layout_marginBottom="18dp"
+						android:background="@drawable/statistics_room_bg"
+						android:text="1h 45m"
+						android:textSize="20sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:id="@+id/time3"
+						android:layout_width="80dp"
+						android:layout_height="40dp"
+						android:layout_marginBottom="18dp"
+						android:background="@drawable/statistics_room_bg"
+						android:text="3h 10m"
+						android:textSize="20sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:id="@+id/time4"
+						android:layout_width="80dp"
+						android:layout_height="40dp"
+						android:layout_marginBottom="18dp"
+						android:background="@drawable/statistics_room_bg"
+						android:text="2h 00m"
+						android:textSize="20sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:id="@+id/time5"
+						android:layout_width="80dp"
+						android:layout_height="40dp"
+						android:layout_marginBottom="18dp"
+						android:background="@drawable/statistics_room_bg"
+						android:text="4h 15m"
+						android:textSize="20sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:id="@+id/time6"
+						android:layout_width="80dp"
+						android:layout_height="40dp"
+						android:layout_marginBottom="18dp"
+						android:background="@drawable/statistics_room_bg"
+						android:text="1h 30m"
+						android:textSize="20sp"
+						android:textStyle="bold" />
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:orientation="vertical">
+
+					<TextView
+						android:id="@+id/time7"
+						android:layout_width="80dp"
+						android:layout_height="40dp"
+						android:layout_marginBottom="18dp"
+						android:layout_weight="1"
+						android:background="@drawable/statistics_room_bg"
+						android:text="2h 22m"
+						android:textSize="20sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:id="@+id/time8"
+						android:layout_width="80dp"
+						android:layout_height="40dp"
+						android:layout_marginBottom="18dp"
+						android:background="@drawable/statistics_room_bg"
+						android:text="1h 30m"
+						android:textSize="20sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:id="@+id/time9"
+						android:layout_width="80dp"
+						android:layout_height="40dp"
+						android:layout_marginBottom="18dp"
+						android:background="@drawable/statistics_room_bg"
+						android:text="3h 00m"
+						android:textSize="20sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:id="@+id/time10"
+						android:layout_width="80dp"
+						android:layout_height="40dp"
+						android:layout_marginBottom="18dp"
+						android:background="@drawable/statistics_room_bg"
+						android:text="2h 10m"
+						android:textSize="20sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:id="@+id/time11"
+						android:layout_width="80dp"
+						android:layout_height="40dp"
+						android:layout_marginBottom="18dp"
+						android:background="@drawable/statistics_room_bg"
+						android:text="4h 00m"
+						android:textSize="20sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:id="@+id/time12"
+						android:layout_width="80dp"
+						android:layout_height="40dp"
+						android:layout_marginBottom="18dp"
+						android:background="@drawable/statistics_room_bg"
+						android:text="1h 25m"
+						android:textSize="20sp"
+						android:textStyle="bold" />
+				</LinearLayout>
+			</LinearLayout>
+
+
+		</LinearLayout>
+	</ScrollView>
+
+	<LinearLayout
+		android:id="@+id/linearLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:orientation="horizontal"
+		android:paddingVertical="10dp"
+		app:layout_constraintBottom_toBottomOf="parent">
+
+		<ImageView
+			android:id="@+id/home_nav"
+			android:layout_width="50dp"
+			android:layout_height="40dp"
+			android:layout_weight="1"
+			android:contentDescription="@string/home_nav"
+			android:src="@drawable/home_light"
+			android:onClick="onHomeClick"/>
+
+
+		<ImageView
+			android:id="@+id/status_nav"
+			android:layout_width="50dp"
+			android:layout_height="40dp"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:contentDescription="@string/status_nav"
+			android:onClick="onStatusClick"
+			android:src="@drawable/status_light" />
+
+		<ImageView
+			android:id="@+id/statistics_nav"
+			android:layout_width="50dp"
+			android:layout_height="40dp"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:contentDescription="@string/statistics_nav"
+			android:src="@drawable/history_dark" />
+
+		<ImageView
+			android:id="@+id/settings_nav"
+			android:layout_width="50dp"
+			android:layout_height="40dp"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:contentDescription="@string/settings_nav"
+			android:src="@drawable/settings_light"
+			android:onClick="onSettingsClick"/>
+
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,238 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FFFFFF">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#FFFFFF"
+		android:padding="16dp">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="16dp"
+				android:background="#F8F8F8"
+				android:gravity="center"
+				android:orientation="horizontal"
+				android:padding="16dp">
+
+				<TextView
+					android:id="@+id/notifications"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_marginEnd="8dp"
+					android:fontFamily="sans-serif"
+					android:text="Notifications"
+					android:textColor="#000000"
+					android:textSize="28sp"
+					android:textStyle="bold" />
+
+				<ImageView
+					android:id="@+id/vector_ek11"
+					android:layout_width="24dp"
+					android:layout_height="24dp"
+					android:contentDescription="Notifications Icon"
+					android:src="@drawable/notifications" />
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="16dp"
+				android:background="#F8F8F8"
+				android:orientation="horizontal"
+				android:padding="16dp">
+
+				<ImageView
+					android:id="@+id/vector_ek10"
+					android:layout_width="24dp"
+					android:layout_height="24dp"
+					android:layout_marginEnd="8dp"
+					android:contentDescription="Exclamation Icon"
+					android:src="@drawable/exclamation" />
+
+				<TextView
+					android:id="@+id/notif_1"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="Alert! The room temperature has dropped to 15°C. Please turn on the heating to maintain comfort."
+					android:textColor="#000000"
+					android:textSize="16sp" />
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="16dp"
+				android:background="#F8F8F8"
+				android:orientation="horizontal"
+				android:padding="16dp">
+
+				<ImageView
+					android:id="@+id/vector_ek12"
+					android:layout_width="24dp"
+					android:layout_height="24dp"
+					android:layout_marginEnd="8dp"
+					android:contentDescription="Exclamation Icon"
+					android:src="@drawable/exclamation" />
+
+				<TextView
+					android:id="@+id/textView2"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="Tip: Lowering the thermostat by 2°C can reduce energy consumption significantly."
+					android:textColor="#000000"
+					android:textSize="16sp" />
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="16dp"
+				android:background="#F8F8F8"
+				android:orientation="horizontal"
+				android:padding="16dp">
+
+				<ImageView
+					android:id="@+id/vector_ek13"
+					android:layout_width="24dp"
+					android:layout_height="24dp"
+					android:layout_marginEnd="8dp"
+					android:contentDescription="Exclamation Icon"
+					android:src="@drawable/exclamation" />
+
+				<TextView
+					android:id="@+id/textView3"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="Error: The cooling system is not responding. Please check the system or contact support."
+					android:textColor="#000000"
+					android:textSize="16sp" />
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="16dp"
+				android:background="#F8F8F8"
+				android:orientation="horizontal"
+				android:padding="16dp">
+
+				<ImageView
+					android:id="@+id/vector_ek14"
+					android:layout_width="24dp"
+					android:layout_height="24dp"
+					android:layout_marginEnd="8dp"
+					android:contentDescription="Exclamation Icon"
+					android:src="@drawable/exclamation" />
+
+				<TextView
+					android:id="@+id/textView4"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="It's time for a routine system check. Regular maintenance helps prevent unexpected issues."
+					android:textColor="#000000"
+					android:textSize="16sp" />
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="16dp"
+				android:background="#F8F8F8"
+				android:orientation="horizontal"
+				android:padding="16dp">
+
+				<ImageView
+					android:id="@+id/vector_ek15"
+					android:layout_width="24dp"
+					android:layout_height="24dp"
+					android:layout_marginEnd="8dp"
+					android:contentDescription="Exclamation Icon"
+					android:src="@drawable/exclamation" />
+
+				<TextView
+					android:id="@+id/textView5"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="Network issue detected. Some features may not be available. Please check your connection."
+					android:textColor="#000000"
+					android:textSize="16sp" />
+			</LinearLayout>
+		</LinearLayout>
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom"
+		android:background="@color/white"
+		android:orientation="horizontal"
+		android:paddingVertical="10dp"
+		app:layout_constraintBottom_toBottomOf="parent">
+
+
+		<ImageView
+			android:id="@+id/home_nav"
+			android:layout_width="50dp"
+			android:layout_height="40dp"
+			android:layout_weight="1"
+			android:layout_gravity="center_vertical"
+			android:contentDescription="@string/home_nav"
+			android:onClick="onHomeClick"
+			android:src="@drawable/home_light" />
+
+		<ImageView
+			android:id="@+id/status_nav"
+			android:layout_width="50dp"
+			android:layout_height="40dp"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:contentDescription="@string/status_nav"
+			android:onClick="onStatusClick"
+			android:src="@drawable/status_light" />
+
+		<ImageView
+			android:id="@+id/statistics_nav"
+			android:layout_width="50dp"
+			android:layout_height="40dp"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:contentDescription="@string/statistics_nav"
+			android:onClick="onStatisticsClick"
+			android:src="@drawable/history_light" />
+
+		<ImageView
+			android:id="@+id/settings_nav"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:contentDescription="@string/settings_nav"
+			android:src="@drawable/settings_dark"
+			android:onClick="onSettingsClick"/>
+
+	</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

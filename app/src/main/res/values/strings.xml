@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- page_4 strings -->
+
+
+	<string name="bathroom">Bathroom</string>
+	<string name="rooms">Rooms</string>
+	<string name="ellipse_9">ellipse_9</string>
+	<string name="ecothermostat">ecothermostat</string>
+	<string name="notification">notification</string>
+	<string name="app_name" />
+	<string name="statistics_nav">statistics_nav</string>
+	<string name="settings_nav">settings_nav</string>
+	<string name="status_nav">status_nav</string>
+	<string name="home_nav">home_nav</string>
+	<string name="img_bathroom">img_bathroom</string>
+	<string name="bedroom_2">Bedroom 2</string>
+	<string name="img_bed_2">img_bed_2</string>
+	<string name="office">Office</string>
+	<string name="img_office">img_office</string>
+	<string name="living_room">Living Room</string>
+	<string name="img_living">img__living</string>
+	<string name="bedroom_1">Bedroom 1</string>
+	<string name="img_bed_1">img_bed_1</string>
+	<string name="weather_info">weather_info</string>
+	<string name="img_kitchen">img_kitchen</string>
+	<string name="kitchen">Kitchen</string>
+	<string name="on">On</string>
+	<string name="off">Off</string>
+	<string name="living_room_status">Living Room</string>
+	<string name="_72">72</string>
+	<string name="target_75">Target: 75</string>
+    <string name="my_location">Location</string>
+	<string name="arnold_schwarzenegger_string">Settings</string>
+    <string name="timer">Timer</string>
+    <string name="alert_1">Alert! The room temperature has dropped to 15°C please turn on the heating to maintain comfort</string>
+	<string name="temperature_format">%d°C</string>
+	<string name="temp_txt">22°C</string>
+	<string name="cooling">Cooling</string>
+	<string name="heating">Heating</string>
+    <string name="_20">20</string>
+	<string name="_21">21</string>
+	<string name="_727">27</string>
+	<string name="_23">23</string>
+	<string name="_16">16</string>
+	<string name="_18">18</string>
+	<string name="_22">22</string>
+	<string name="_27">27</string>
+	<string name="default_loc">Zwickau</string>
+    <string name="learn_page_content">EcoThermostat App Overview\n\n Home Page\n - City Weather: View current city weather, click for details, and change cities.\n - Room Control: Overview and on/off for room systems. Access detailed controls when on.\n\n Room Control Interface\n - Current Temperature: Display room temperature.\n - Set Temperature: Adjust with -/+ buttons.\n - Climate Control: Toggle on/off.\n - Timer: Set auto off timer.\n - Save Settings: Click save, wait for changes to reflect.\n\n Navigation Bar\n - Home: Return to home screen.\n - Status: View room temperatures.\n - Statistics: Energy usage over time, presence of room members.\n - Settings: User details, notifications, FAQ, educational resources, logout.\n\n Efficient Climate-Control Practices\n\n - Thermostat Settings: 20°C in winter, 25°C in summer.\n - Insulation: Proper insulation and sealing leaks.\n - Ventilation: Ensure good airflow.\n - Maintenance: Regular HVAC checks and clean ducts.\n - Energy-Efficient Appliances: Use Energy Star-rated systems.\n\n Resources\n - Energy-Efficient Heating and Cooling: https://www.energy.gov/energysaver/guide-energy-efficient-heating-and-cooling\n - Energy Star: https://www.energystar.gov/\n - ASHRAE: https://www.ashrae.org/\n\n Default Temperatures\n - Living Room: 21°C\n - Bedroom: 16°C\n - Kitchen: 27°C\n - Bathroom: 22°C ```</string>
+
+	<string name="channel_name">EcoThermostat Channel</string>
+	<string name="channel_description">This is a notification channel.</string>
+    <string name="faq_txt">Q1: How can I set the temperature in my home?\nA: Use the Status button at the navigation bar at the bottom and select your preferred room.\n\nQ2: Can I schedule heating for different rooms?\nA: Yes, with the Timer feature available in each room.\n\nQ3: Is remote control possible?\nA: Absolutely, control from anywhere with internet access.\n\nQ4: How does the app save energy?\nA: Switch on Climate Control for the Best Energy Efficiency.\n\nQ5: Does it integrate with smart devices?\nA: Yes, seamless integration with various devices.\n\nQ6: What to do if I face technical issues?\nA: Check out Learn with us in the app or contact support.\n\nQ7: Can I view usage history?\nA: Yes, explore usage patterns in Statistics\n\nQ8: Is it available for iOS and Android?\nA: Yes, available on both platforms.\n</string>
+    <string name="auto_on">Auto On</string>
+</resources>
